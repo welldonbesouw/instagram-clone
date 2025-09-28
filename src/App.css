@@ -1,0 +1,20 @@
+.hide-scrollbar {
+   scrollbar-width: none; /* Firefox */
+   -ms-overflow-style: none; /* IE 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+   display: none; /* Chrome, Safari, Opera */
+}
+
+.story::after {
+   content: "";
+   position: absolute;
+   background: conic-gradient(from 45deg, #d700c5, #fd6e1f, #ffce00, #fd6e1f, #d700c5);
+   z-index: -1;
+   top: 4px;
+   left: -4px;
+   height: 96px;
+   width: 96px;
+   border-radius: 100%;
+}
